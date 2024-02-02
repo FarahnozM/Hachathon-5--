@@ -1,3 +1,44 @@
+* {
+  box-sizing: border-box;
+  padding:0px;
+  margin:0px;
+}
+
+
+
+/* inter-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/inter-v13-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 body{
   max-width: auto;
   min-width: auto;
@@ -11,7 +52,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--color-white);
+  background-color: var(white);
   width: 1440px;
   height: 194px;
 }
@@ -35,8 +76,8 @@ body{
 .group-item {
   top: 0;
   border-radius: 0 0 var(--br-11xl) var(--br-11xl);
-  background-color: var(--color-aliceblue);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(aliceblue);
+  box-shadow: 0 4px 4px rgba(85, 79, 79, 0.25);
   width: 1360px;
   height: 765px;
 }
@@ -54,19 +95,22 @@ body{
   position: absolute;
   left: 750px;
 }
+.link-1 {
+  text-decoration: none;
+}
 .div {
+  text-decoration: none;
   top: 80px;
-  font-size: var(--font-size-26xl);
+  font-size: 26px;
   font-weight: 900;
-  color: var(--color);
   display: inline-block;
   width: 508px;
   height: 123px;
 }
 .rectangle-div {
   top: 234px;
+  background-color: var( white);
   border-radius: var(--br-xl);
-  background-color: var(--color-white);
   width: 435px;
   height: 60px;
   cursor: pointer;
